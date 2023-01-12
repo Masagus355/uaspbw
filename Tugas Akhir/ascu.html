@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon">
+                        <button onclick="myFunction()" class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+
+            <section class="shop container">
+                <h2 class="game-title">Assassins's Creed Unity</h2>  
+                            <div>
+                            <video  controls class="left">  
+                                <source src="vids/UNITY.mp4" type="video/mp4">
+                             </video>
+                            </div>
+                        <div class="right">
+                            <img src="Pics/acutc.jpg" class="img-tc">
+                            <h3>Synopsis</h3>
+                            <p>Assassin's Creed® Unity tells the story of Arno, a young man who embarks upon an extraordinary journey to expose the true powers behind the French Revolution.
+                               In the brand new co-op mode, you and your friends will also be thrown in the middle of a ruthless struggle for the fate of a nation.<br>
+                                  <br>
+                                  DEVELOPER:
+                                  Ubisoft
+                                  PUBLISHER:
+                                  Ubisoft
+                                </p>
+                        </div>
+                     </div> 
+        <h2 class="middle">Specs and Requirements</h2>
+        <a href="zip/gowzip.zip"><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+        <p style="color: #F0E9D2;"> MINIMUM:<br>
+          OS: Windows 7 SP1, Windows 8/8.1 (64-bit operating system required) <br>
+          Processor: Intel Core i5-2500K @ 3.3 GHz or AMD FX-8350 @ 4.0 GHz <br>
+          Memory: 6 GB RAM <br>
+          Graphics: NVIDIA GeForce GTX 680 or AMD Radeon HD 7970 (2 GB VRAM) <br>
+          Storage: 50 GB available space <br>
+          Sound Card: DirectX 9.0c compatible sound card with latest drivers <br>
+          Additional Notes: Windows-compatible keyboard and mouse required, optional controller <br>
+            <br>
+            OS: Windows 7 SP1, Windows 8/8.1 (64-bit operating system required) <br>
+            Processor: Intel Core i7-3770 @ 3.4 GHz or AMD FX-8350 @ 4.0 GHz or better <br>
+            Memory: 8 GB RAM <br>
+            Graphics: NVIDIA GeForce GTX 780 or AMD Radeon R9 290X (3 GB VRAM) <br>
+            Storage: 50 GB available space <br>
+            Sound Card: DirectX 9.0c compatible sound card with latest drivers <br>
+            </p>
+        </section>
+            <footer-gp>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+           
+        </body>
+    </html>

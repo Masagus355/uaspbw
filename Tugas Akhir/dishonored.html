@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon">
+                        <button onclick="myFunction()" class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+
+            <section class="shop container">
+                <h2 class="game-title">Dishonored</h2>  
+                            <div>
+                            <video  controls class="left">  
+                                <source src="vids/DISHONORED.mp4" type="video/mp4">
+                             </video>
+                            </div>
+                        <div class="right">
+                            <img src="Pics/dishonortc.jpg" class="img-tc">
+                            <h3>Synopsis</h3>
+                            <p>Dishonored is an immersive first-person action game that casts you as a supernatural assassin driven by revenge.
+                               With Dishonored's flexible combat system, creatively eliminate your targets as you combine the supernatural abilities,
+                                weapons and unusual gadgets at your disposal.<br>
+                                  <br>
+                                  DEVELOPER:
+                                 Arkane Studios
+                                  PUBLISHER:
+                                  Bethesda Softworks
+                                </p>
+                        </div>
+                     </div> 
+        <h2 class="middle">Specs and Requirements</h2>
+        <a href="zip/gowzip.zip"><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+        <p style="color: #F0E9D2;"> MINIMUM:<br>
+          OS: Windows Vista / Windows 7<br>
+          Processor: 3.0 GHz dual core or better<br>
+          Memory: 3 GB system RAM<br>
+          Hard Disk Space: 9 GB<br>
+          Video Card: DirectX 9 compatible with 512 MB video RAM or better (NVIDIA GeForce GTX 460 / ATI Radeon HD 5850)<br>
+          Sound: Windows compatible sound card<br>
+            <br>
+            RECOMMENDED:<br>
+            OS: Windows Vista / Windows 7 (enhanced for 64-bit OS)<br>
+            Processor: 2.4 GHz quad core or better (enhanced for multi-core processors)<br>
+            Memory: 4 GB system RAM<br>
+            Hard Disk Space: 9 GB<br>
+            Video Card: DirectX 9 compatible with 768 MB video RAM or better (NVIDIA GeForce GTX 460 / ATI Radeon HD 5850)<br>
+            Sound: Windows compatible sound card<br>
+            </p>
+        </section>
+            <footer-gp>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+           
+        </body>
+    </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon">
+                        <button onclick="myFunction()"class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+            <!-- Shop -->
+            <section class="shop container">
+                <a href="index.html"><h2 class="section-title">Home</h2></a>
+            <!-- Content -->
+            <div class="shop-content">
+                <!-- Box 1 -->
+                <a href="tekken7.html">
+                <div class="product-box">
+                    <img src="Pics/Tekken7.jpg" alt="" class="product-img">
+                   <h2 class="product-title">Tekken 7</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 2 -->
+                <a href="cyberpunk2077.html">
+                <div class="product-box">
+                    <img src="Pics/Cyberp77.jpg" alt=""  class="product-img">
+                   <h2 class="product-title">Cyberpunk 2077</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 3 -->
+                <a href="DRAGONDOGMA.html">
+                <div class="product-box">
+                    <img src="Pics/DragonsDogma.jpg" alt=""  class="product-img">
+                   <h2 class="product-title">Dragon's Dogma</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 4 -->
+                <a href="dishonored.html">
+                <div class="product-box">
+                    <img src="Pics/Dishonored.jpg" alt=""  class="product-img">
+                     <h2 class="product-title">Dishonored</h2>
+                    <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+          <div class="center pagination">
+                <div class="pagination a">
+                    <a href="home2.html">&laquo;</a>
+                    <a href="index.html">1</a>
+                    <a href="home2.html">2</a>
+                    <a href="home3.html" class="active">3</a>
+                  </div> 
+              </div>
+           </section>
+            <footer>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+           
+        </body>
+    </html>

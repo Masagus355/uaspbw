@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon">
+                        <button onclick="myFunction()" class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+
+            <section class="shop container">
+                <h2 class="game-title">Tekken7</h2>  
+                            <div>
+                            <video  controls class="left">  
+                                <source src="vids/TEKKEN7.mp4" type="video/mp4">
+                             </video>
+                            </div>
+                        <div class="right">
+                            <img src="Pics/Tekken7tc.jpg" class="img-tc">
+                            <h3>Synopsis</h3>
+                            <p>Discover the epic conclusion of the Mishima clan and unravel the reasons behind each step of their ceaseless fight.
+                               Powered by Unreal Engine 4, TEKKEN 7 features stunning story-driven cinematic battles and intense duels that can be enjoyed with friends and rivals alike through innovative fight mechanics.
+                              <br>
+                                  <br>
+                                  DEVELOPER:
+                                  Bandai Namco
+                                  PUBLISHER:
+                                  Bandai Namco
+                                </p>
+                        </div>
+                     </div> 
+        <h2 class="middle">Specs and Requirements</h2>
+        <a href="zip/gowzip.zip"><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+        <p style="color: #F0E9D2;"> MINIMUM:<br>
+          OS: Windows 7/8/10 (64-bit OS required)<br>
+          Processor: Intel Core i3-4160 @ 3.60GHz or equivalent<br>
+          Memory: 6 GB RAM<br>
+          Graphics: NVIDIA GeForce GTX 660 2GB, GTX 750Ti 2GB, or equivalent<br>
+          DirectX: Version 11<br>
+          Network: Broadband Internet connection<br>
+          Storage: 60 GB available space<br>
+          Sound Card: DirectX compatible soundcard or onboard chipset<br>
+            <br>
+            RECOMMENDED:<br>
+            Requires a 64-bit processor and operating system<br>
+            OS: Windows 7/8/10 (64-bit OS required)<br>
+            Processor: Intel Core i5-4690 3.5 GHz or equivalent<br>
+            Memory: 8 GB RAM<br>
+            Graphics: NVIDIA GeForce GTX 1060 equivalent or higher<br> 
+            DirectX: Version 11<br>
+            Network: Broadband Internet connection<br>
+            Storage: 60 GB available space<br>
+            Sound Card: DirectX compatible soundcard or onboard chipset <br>
+            </p>
+        </section>
+            <footer-gp>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+           
+        </body>
+    </html>

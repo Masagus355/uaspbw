@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon">
+                        <button onclick="myFunction()" class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+
+            <section class="shop container">
+                <h2 class="game-title">GTA V</h2>  
+                            <div>
+                            <video  controls class="left">  
+                                <source src="vids/GTAV.mp4" type="video/mp4">
+                             </video>
+                            </div>
+                        <div class="right">
+                            <img src="Pics/gtavtc.jpg" class="img-tc">
+                            <h3>Synopsis</h3>
+                            <p>When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld,
+                               the U.S. government and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other.<br>
+                                  <br>
+                                  DEVELOPER:
+                                  Rockstar North
+                                  PUBLISHER:
+                                 Rockstar Games
+                                </p>
+                        </div>
+                     </div> 
+        <h2 class="middle">Specs and Requirements</h2>
+        <a href="zip/gowzip.zip"><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+        <p style="color: #F0E9D2;"> MINIMUM:<br>
+            Requires a 64-bit processor and operating system<br>
+            OS: Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1<br>
+            Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz<br>
+            Memory: 4 GB RAM<br>
+            Graphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)<br>
+            Storage: 72 GB available space<br>
+            Sound Card: 100% DirectX 10 compatible<br>
+            <br>
+            RECOMMENDED:<br>
+            Requires a 64-bit processor and operating system<br>
+            OS: Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1<br>
+            Processor: Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)<br>
+            Memory: 8 GB RAM<br>
+            Graphics: NVIDIA GTX 660 2GB / AMD HD 7870 2GB<br>
+            Storage: 72 GB available space<br>
+            Sound Card: 100% DirectX 10 compatible<br>
+            </p>
+        </section>
+            <footer-gp>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+           
+        </body>
+    </html>

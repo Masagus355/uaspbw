@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon">
+                        <button onclick="myFunction()" class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+
+            <section class="shop container">
+                <h2 class="game-title">Just Cause 3</h2>  
+                            <div>
+                            <video  controls class="left">  
+                                <source src="vids/JC3.mp4" type="video/mp4">
+                             </video>
+                            </div>
+                        <div class="right">
+                            <img src="Pics/JustCause3tc.jpg" class="img-tc">
+                            <h3>Synopsis</h3>
+                            <p>he Mediterranean republic of Medici is suffering under the brutal control of General Di Ravello, a dictator with an insatiable appetite for power.
+                               Enter Rico Rodriguez, a man on a mission to destroy the Genera's hold on power by any means necessary. With over 400 square miles of complete
+                                freedom from sky to seabed and a huge arsenal of weaponry, gadgets and vehicles, prepare to unleash chaos in the most creative and explosive ways you can imagine.<br>
+                                  <br>
+                                  DEVELOPER:
+                                  Avalanche Studios
+                                  PUBLISHER:
+                                  Square Enix
+                                </p>
+                        </div>
+                     </div> 
+        <h2 class="middle">Specs and Requirements</h2>
+        <a href="zip/gowzip.zip"><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+        <p style="color: #F0E9D2;"> MINIMUM:<br>
+            ROS: Vista SP2 / Windows 7.1 SP1 / Windows 8.1 (64-bit Operating System Required)<br>
+            Processor: Intel Core i5-2500k, 3.3GHz / AMD Phenom II X6 1075T 3GHz<br>
+            Memory: 8 GB RAM<br>
+            Graphics: NVIDIA GeForce GTX 670 (2GB) / AMD Radeon HD 7870 (2GB)<br>
+            Storage: 54 GB available space<br>
+            <br>
+            RECOMMENDED:<br>
+            OS: Vista SP2 / Windows 7.1 SP1 / Windows 8.1 (64-bit Operating System Required)<br>
+            Processor: Intel Core i7-3770, 3.4 GHz / AMD FX-8350, 4.0 GHz<br>
+            Memory: 8 GB RAM<br>
+            Graphics: NVIDIA GeForce GTX 780 (3GB) / AMD R9 290 (4GB)<br>
+            Storage: 54 GB available space<br>
+            </p>
+        </section>
+            <footer-gp>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+           
+        </body>
+    </html>

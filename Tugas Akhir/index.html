@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Videogame Website</title>
+            <!-- Link CSS -->
+            <link rel="stylesheet" href="SSS.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <!-- Box Icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+        <body class="background">
+            <!-- Header -->
+            <header>
+                <!-- Nav -->
+                <div class="nav container">
+                    <a href="index.html" class="logo"><h3>ATLAS-Games<i class='bx bx-world' style='color:#F0E9D2'></h3></i></a>
+                    <!-- sidenav -->
+                    <div class="dropdown game-icon ">
+                        <button onclick="myFunction()" class="btnbox"><i class='bx bx-joystick dropbtn' style='color:#F0E9D2' id="game-icon" ></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="contact.html">Contact</a>
+                          <a href="Help.pdf">Help me</a>
+                        </div>
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                </div>
+            </header>
+            <!-- Page Title -->
+            <section class="shop container">
+                <a href="index.html"><h2 class="section-title">Home</h2></a>
+            <!-- Content -->
+            
+            <div class="w3-content w3-display-container" style="max-width:1200px">
+                <a href="cyberpunk2077.html"><img class="mySlides" src="Pics/cp277carousel.jpg" style="width:100%"></a>
+                <a href="eldenring.html"><img class="mySlides" src="Pics/ERcarousel.jpg" style="width:100%"></a>
+                <a href="forza4.html"><img class="mySlides" src="Pics/forza4carousle.jpg" style="width:100%"></a>
+               <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white dot" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white dot" onclick="currentDiv(2)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white dot" onclick="currentDiv(3)"></span>
+                </div>
+              </div>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function currentDiv(n) {
+                  showDivs(slideIndex = n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " w3-white";
+                }
+                </script>
+                <div class="shop-content">
+                <!-- Box 1 -->
+                <a href="gow.html">
+                <div class="product-box">
+                    <img src="Pics/gow.jpg" alt="" class="product-img">
+                   <h2 class="product-title">God Of War</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 2 -->
+                <a href="tlou.html">
+                <div class="product-box">
+                    <img src="Pics/tlou.jpg" alt=""  class="product-img">
+                   <h2 class="product-title">The Last Of Us</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 3 -->
+                <a href="assettocorsa.html">
+                <div class="product-box">
+                    <img src="Pics/AC.jpg" alt=""  class="product-img">
+                   <h2 class="product-title">Asetto Corsa</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 4 -->
+                <a href="eldenring.html">
+                <div class="product-box">
+                    <img src="Pics/Elden.jpg" alt=""  class="product-img">
+                     <h2 class="product-title">Elden Ring</h2>
+                    <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 5 -->
+                <a href="codwow.html">
+                <div class="product-box">
+                    <img src="Pics/COD.jpg" alt=""  class="product-img">
+                   <h2 class="product-title">COD: World at War</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 6 -->
+                <a href="nfsheat.html">
+                <div class="product-box">
+                    <img src="Pics/NFS Heat.jpg" alt="" class="product-img">
+                   <h2 class="product-title">NFS Heat</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 7 -->
+                <a href="thewitcher3.html">
+                <div class="product-box">
+                    <img src="Pics/Witcher.jpg" alt=""  class="product-img">
+                   <h2 class="product-title">The Witcher 3</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+                <!-- Box 8 -->
+                <a href="gtav.html">
+                <div class="product-box">
+                    <img src="Pics/gta.jpg" alt="" class="product-img">
+                   <h2 class="product-title">GTA V</h2>
+                   <i class='bx bx-joystick' id="game-icon"></i> 
+                </div>
+              </a>
+          <div class="center pagination">
+                <div class="pagination a">
+                    <a href="index.html" class="active">1</a>
+                    <a href="home2.html">2</a>
+                    <a href="home3.html">3</a>
+                    <a href="home2.html">&raquo;</a>
+                  </div> 
+              </div>
+            </section>
+            <footer-gp>
+                <div class="nav-footer container">
+                    <a href="https://twitter.com/explore" class="social"><i class='bx bxl-twitter' style='color:#F0E9D2'></i></a>
+                    <a href="https://www.instagram.com/" class="social"><i class='bx bxl-instagram-alt' style='color:#f0e9d2'></i></i></a>
+                    <a href="https://www.youtube.com/" class="social"><i class='bx bxl-youtube' style='color:#f0e9d2' ></i></a>
+                    <a href="https://discord.com/" class="social"><i class='bx bxl-discord-alt' style='color:#f0e9d2' ></i></a>
+                    <a href="https://web.telegram.org" class="social"><i class='bx bxl-telegram' style='color:#f0e9d2' ></i></a>
+                </div>
+                <h3 class="nav-footer" style="color: #F0E9D2 ;">Copyright <i>&copy</i>;Masagus355</h3>
+            </footer>
+          
+        </body>
+    </html>
